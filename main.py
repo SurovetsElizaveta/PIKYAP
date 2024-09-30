@@ -1,16 +1,15 @@
-# This is a sample Python script.
+from lab_python_oop.rectangle import Rectangle
+from lab_python_oop.circle import Circle
+from lab_python_oop.square import Square
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def main():
+    n = 10
+    rect = Rectangle(n, n, "blue")
+    circ = Circle(n, "green")
+    sqr = Square(n, n, "red")
+    print(rect.__repr__())
+    print(circ.__repr__())
+    print(sqr.__repr__())
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
