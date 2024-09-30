@@ -1,5 +1,5 @@
-from lab_python_oop.geom_figure import GeomFigure
-from lab_python_oop.figure_color import FigureColor
+from Lab1.lab_python_oop.geom_figure import GeomFigure
+from Lab1.lab_python_oop.figure_color import FigureColor
 
 class Rectangle(GeomFigure):
     def __init__(self, wid, len, color):

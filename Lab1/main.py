@@ -1,6 +1,6 @@
-from lab_python_oop.rectangle import Rectangle
-from lab_python_oop.circle import Circle
-from lab_python_oop.square import Square
+from Lab1.lab_python_oop.rectangle import Rectangle
+from Lab1.lab_python_oop.circle import Circle
+from Lab1.lab_python_oop.square import Square
 
 def main():
     n = 10
