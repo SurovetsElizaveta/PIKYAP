@@ -99,26 +99,6 @@ def getDetailByLetter(data, letter):
 
 
 class TestByModule(unittest.TestCase):
-    # def __init__(self):
-    #     self.one_to_many = {}
-    #     self.many_to_many = {}
-    #     self.many_to_many_temp = []
-
-    # def setData(self):
-    #     self.one_to_many = [(d.name, d.price, p.name)
-    #                         for d in details
-    #                         for p in providers
-    #                         if d.id_prov == p.id]
-    #
-    #     self.many_to_many_temp = [(p.name, dp.prov_id, dp.det_id)
-    #                               for p in providers
-    #                               for dp in dets_provs
-    #                               if p.id == dp.prov_id]
-    #
-    #     self.many_to_many = [(d.name, d.price, prov_name)
-    #                          for prov_name, prov_id, det_id in self.many_to_many_temp
-    #                          for d in details if d.id == det_id]
-
     def test_find_by_word(self):
         result = findByWord(one_to_many, 'Авто')
         expected = [('Свеча зажигания', 7000, 'АртАвто'), ('Фара', 9600, 'АртАвто')]
@@ -126,7 +106,7 @@ class TestByModule(unittest.TestCase):
 
     def test_get_avg_each_provider(self):
         result = getAvgEachProvider(one_to_many)
-        expected =  [('Партгрейд', 13500.0), ('Кетекс', 12000.0), ('Комтранс', 8750.0), ('АртАвто', 8300.0)]
+        expected = [('Партгрейд', 13500.0), ('Кетекс', 12000.0), ('Комтранс', 8750.0), ('АртАвто', 8300.0)]
         self.assertEquals(result, expected)
 
     def test_get_detail_by_letter(self):
@@ -135,10 +115,5 @@ class TestByModule(unittest.TestCase):
         self.assertEquals(result, expected)
 
 
-# def main():
-#     test_module = TestByModule()
-
-
 if __name__ == '__main__':
-    # main()
     unittest.main()
